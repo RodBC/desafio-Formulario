@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import wallpaper from './wallpaper.jpg';
+import './styles.css';
+import {Forms} from './components/form'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div className='container'>
+    <div className="form">
+      <div className='login'>
+          <div className='innerLogin'>
+            <h1 className='titulo'>Faça seu login</h1>
+            <p className='texto'>Entre com suas informações de cadastro.</p>
+            <Forms/>
+          </div>
+      </div>
     </div>
+    <div className="image">
+      <img id='imagem-wallpaper' src={wallpaper} alt='wallpaper'/>
+    </div>
+  </div>
   );
 }
 
