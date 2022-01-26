@@ -1,7 +1,7 @@
 import React from "react";
 import './form.css';
-import lock from './lock.svg'
-import mail from './mail.svg'
+import lock from './assets/lock.svg'
+import mail from './assets/mail.svg'
 
 export const Forms = () => {
     return(
@@ -11,9 +11,11 @@ export const Forms = () => {
                 <img className='icon' src={mail} alt='mail'/>        
                 <input className="form-label" id='input' type='text' size={13}></input>
             </form>
-            <p className="form-label">Password</p>
+            <p className="form-label">Senha</p>
             <form  className="form-complete">
-                <input className="form-label" id='input' type='text' size={13}></input>
+            <img className='icon' src={lock} alt='mail'/>        
+                <input className="form-label" id='input' type='password' size={13}></input>
             </form>
+
         </>
 )}
